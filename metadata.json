@@ -1,0 +1,7 @@
+{
+  "name": "Hootme - Online Shopping Platform",
+  "description": "A full-featured, mobile-first e-commerce platform inspired by Meesho, featuring user shopping, cart systems, order tracking, and a comprehensive admin dashboard.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
