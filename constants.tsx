@@ -12,7 +12,7 @@ export const CATEGORIES = [
   { id: 'electronics', name: 'Electronics', icon: <i className="fa-solid fa-laptop"></i> },
 ];
 
-// Custom images provided by user - using highest quality Unsplash equivalents
+// Custom images provided by user
 const USER_IMAGE_1 = "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=100&w=1200"; 
 const USER_IMAGE_2 = "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=100&w=1200"; 
 

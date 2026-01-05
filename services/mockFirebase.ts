@@ -24,7 +24,7 @@ import {
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'hootme_products_v4', // Incremented version to force clear old broken images
+  PRODUCTS: 'hootme_products_v5', // Forced refresh for Mascara image fix
   ORDERS: 'hootme_orders',
   USERS: 'hootme_users',
   CURRENT_USER: 'hootme_current_user',

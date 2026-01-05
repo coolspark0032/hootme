@@ -13,6 +13,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const isWishlisted = wishlist.includes(product.id);
   const discount = Math.round(((product.mrp - product.price) / product.mrp) * 100);
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    // High-quality placeholder if the link is broken
+    e.currentTarget.src = 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800';
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative group hover:shadow-md transition-all duration-300">
       <button 
@@ -31,6 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             src={product.images[0]} 
             alt={product.name} 
             loading="lazy"
+            onError={handleImageError}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out brightness-[0.98] contrast-[1.02]"
           />
         </div>
