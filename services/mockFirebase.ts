@@ -24,7 +24,7 @@ import {
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'hootme_products_v2', // Updated key to force fresh load of the new photos
+  PRODUCTS: 'hootme_products_v4', // Incremented version to force clear old broken images
   ORDERS: 'hootme_orders',
   USERS: 'hootme_users',
   CURRENT_USER: 'hootme_current_user',
